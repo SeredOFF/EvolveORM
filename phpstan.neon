@@ -1,0 +1,46 @@
+parameters:
+    level: 9
+    excludePaths:
+    paths:
+        - src
+        - tests
+    fileExtensions:
+        - php
+    ignoreErrors:
+        -
+          message: '#array_merge_recursive expects array, mixed given#'
+          path: src/Bundle/Payload/HydrationPayloadProcessor.php
+        -
+          message: '#Method EvolveORM\\Tests\\Fixture\\BuiltInType\\NullableUnion::__construct\(\) has parameter \$value with no value type specified in iterable type array#'
+          path: tests/Fixture/BuiltInType/NullableUnion.php
+        -
+          message: '#Method EvolveORM\\Tests\\Fixture\\BuiltInType\\StrictArray::__construct\(\) has parameter \$value with no value type specified in iterable type array#'
+          path: tests/Fixture/BuiltInType/StrictArray.php
+        -
+          message: '#Method EvolveORM\\Tests\\Fixture\\BuiltInType\\StrictUnion::__construct\(\) has parameter \$value with no value type specified in iterable type array#'
+          path: tests/Fixture/BuiltInType/StrictUnion.php
+        -
+          message: '#Method EvolveORM\\Tests\\Integration\\TripRepositoryTest::cases\(\) return type has no value type specified in iterable type array#'
+          path: tests/Integration/TripRepositoryTest.php
+        -
+          message: '#Method EvolveORM\\Tests\\Unit\\HydrationPayloadProcessorTest::cases\(\) return type has no value type specified in iterable type array#'
+          path: tests/Unit/HydrationPayloadProcessorTest.php
+        -
+          message: '#Method EvolveORM\\Tests\\Unit\\HydrationPayloadProcessorTest::testFromLookupValueMap\(\) has parameter \$input with no value type specified in iterable type array#'
+          path: tests/Unit/HydrationPayloadProcessorTest.php
+        -
+          message: '#Method EvolveORM\\Tests\\Unit\\HydrationPayloadProcessorTest::testFromLookupValueMap\(\) has parameter \$output with no value type specified in iterable type array#'
+          path: tests/Unit/HydrationPayloadProcessorTest.php
+        -
+          message: '#Parameter \#1 ...\$tripIds of method EvolveORM\\Tests\\Fixture\\Repository\\TripRepository::withPassenger\(\) expects string, int\|string given#'
+          path: tests/Fixture/Repository/TripRepository.php
+        -
+          message: '#Method EvolveORM\\Tests\\Fixture\\Repository\\TripRepository::findAll\(\) should return array<EvolveORM\\Tests\\Fixture\\Domain\\Aggregate\\Trip> but returns array<object>#'
+          path: tests/Fixture/Repository/TripRepository.php
+        -
+          message: '#Method EvolveORM\\Hydrator::hydrateAll\(\) has parameter \$lookupValueMaps with no value type specified in iterable type array#'
+          path: src/Hydrator.php
+        -
+          message: '#Method EvolveORM\\Hydrator::hydrate\(\) has parameter \$lookupValueMap with no value type specified in iterable type array#'
+          path: src/Hydrator.php
+    treatPhpDocTypesAsCertain: false

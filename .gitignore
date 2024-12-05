@@ -1,0 +1,13 @@
+# IDE
+/.idea
+/.vscode
+/nbproject
+/.DS_STORE
+
+# Vendor
+/vendor
+
+# Cache
+/.phpunit.result.cache
+/.php_cs.cache
+/identifier.sqlite
