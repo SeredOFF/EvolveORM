@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  php-cli:
+    container_name: evolve-orm-php-cli
+    build:
+      context: docker/php-cli
+    volumes:
+      - ./:/www/
+    working_dir: /www
+    command: bash
+    tty: true
